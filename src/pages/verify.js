@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 export default function VerifyPage() {
     const router = useRouter();
 
-
     const handleVerify = (e) => {
         e.preventDefault();
         // Simulasi verifikasi
