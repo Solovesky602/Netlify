@@ -1,0 +1,35 @@
+/* Hilangkan semua underline dan warna link default */
+a, a:visited, a:hover, a:active, a:focus {
+    text-decoration: none !important;
+    color: inherit !important;
+    outline: none !important; /* hilangkan outline fokus default (optional) */
+  }
+
+  .btn-outline-light,
+  a.btn-outline-light {
+    color: white !important;
+  }
+  
+  
+  /* Styling untuk link aktif */
+  .active-link {
+    text-decoration: underline !important;
+    color: black !important;
+    font-weight: 700 !important;
+  }
+  
+  /* Styling untuk link non aktif */
+  .no-underline-link {
+    text-decoration: none !important;
+    color: black !important;
+    font-weight: 700 !important;
+  }
+  
+  /* Navbar Brand tanpa underline dan warna putih */
+  .navbar-brand {
+    text-decoration: none !important;
+    color: white !important;
+    font-weight: 700 !important;
+    cursor: pointer;
+  }
+  
