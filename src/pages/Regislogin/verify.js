@@ -15,7 +15,7 @@ export default function VerifyPage() {
             confirmButtonText: "OK"
         }).then((result) => {
             if (result.isConfirmed) {
-            router.push("/company");
+            router.push("/Regislogin/company");
             }
         })
         );

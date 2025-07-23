@@ -46,7 +46,7 @@ export default function RegisterPage() {
         confirmButtonText: "OK",
       }).then((result) => {
         if (result.isConfirmed) {
-          router.push("/verify");
+          router.push("/Regislogin/verify");
         }
     });
 

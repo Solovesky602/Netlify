@@ -7,8 +7,7 @@ class MyDocument extends Document {
       <Html lang="id">
         <Head>
           <link rel="icon" href="/favicon.ico" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <title>Netlify App</title>
+          {/* Tidak ada <meta viewport> atau <title> di sini! */}
         </Head>
         <body>
           <Main />

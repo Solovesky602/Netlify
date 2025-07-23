@@ -16,11 +16,11 @@ export default function LoginPage() {
             </p>
 
             <div className="d-grid gap-2 mt-4">
-              <Button variant="primary" size="lg">
+              <Button variant="primary" size="lg" href="/Regislogin/login">
                 Scan QR Code
               </Button>
               <span className="text-muted fw-bold">or</span>
-              <Button variant="outline-secondary" href="/register">Register</Button>
+              <Button variant="outline-secondary" href="/Regislogin/register">Register</Button>
             </div>
 
             <p className="mt-4" style={{ fontSize: "0.9rem", opacity: 0.8 }}>

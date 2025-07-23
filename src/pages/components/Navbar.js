@@ -19,13 +19,14 @@ export default function NavbarComponent() {
           <Button variant="dark" onClick={handleShow} aria-label="Menu">
             <span className="navbar-toggler-icon"></span>
           </Button>
-          <Link href="/" passHref>
-            <Navbar.Brand className="ms-2 ">Event App</Navbar.Brand>
+
+          <Link href="/" legacyBehavior>
+            <a className="navbar-brand ms-2">Event App</a>
           </Link>
 
-          <Button href="/login" variant="outline-light" className="ms-auto">
-            Login / Register
-          </Button>
+          <Link href="/Regislogin/loginregis" legacyBehavior>
+            <a className="btn btn-outline-light ms-auto">Login / Register</a>
+          </Link>
         </Container>
       </Navbar>
 
@@ -37,17 +38,19 @@ export default function NavbarComponent() {
           <Nav className="flex-column">
             {[
               { href: "/", label: "Home" },
-              { href: "/attendees", label: "Attendees" },
-              { href: "/matchmaking", label: "Matchmaking" },
-              { href: "/profile", label: "Profile" },
+              { href: "/Attendee/attendeelist", label: "Attendees" },
+              { href: "/Matchmaking/request", label: "Matchmaking" },
+              { href: "/Profile/profile", label: "Profile" },
             ].map(({ href, label }) => (
-              <Link key={href} href={href} passHref>
-                <Nav.Link
-                  className={isActive(href) ? "active-link" : "no-underline-link"}
+              <Link key={href} href={href} legacyBehavior>
+                <a
+                  className={`nav-link ${
+                    isActive(href) ? "active-link" : "no-underline-link"
+                  }`}
                   onClick={handleClose}
                 >
                   {label}
-                </Nav.Link>
+                </a>
               </Link>
             ))}
           </Nav>
