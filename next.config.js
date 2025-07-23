@@ -1,9 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
-    trailingSlash: true,
+    output: 'export',          // Untuk static export
+    trailingSlash: true,       // Untuk Netlify agar path seperti /about/ tidak error
+    images: {
+      unoptimized: true        // ⬅️ Ini yang matikan image optimization
+    },
     eslint: {
-      ignoreDuringBuilds: true,
+      ignoreDuringBuilds: true // Biar warning tidak blokir build
     }
   }
   
